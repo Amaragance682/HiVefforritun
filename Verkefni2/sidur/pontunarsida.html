@@ -23,33 +23,58 @@
         </nav>
         <main class="content">
             <aside class="haegri">
-                <h4> haegri dalkur </h4>
+                <p> haegri dalkur </p>
                 <p>einhver texti her</p>
             </aside>
             <article class="midja">
                 <h1> Pantanir </h1>
-                <h4>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</h4>
-                <h2> Panta borð</h2>
-                <h4>* Hvenær viltu koma? [val um dagstíma]</h4>
-                <h4>* Hve mörg? [val um 1–10]</h4>
-                <h4>* Viltu taka eitthvað fram? [val um að skrifa inn texta]</h4>
+                <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
+                <p> Panta borð</p>
 
-                <h2>Panta mat</h2>
-                <h4>* Réttur #N [fimm reitir sem leyfa val úr titlum rétta á matseðli]</h4>
-                <h4>* Heimilisfang [val um að skrifa inn heimilisfang]</h4>
 
-                <h2>Þínar upplýsingar</h2>
-                <h4>* Nafn [krafa um að setja inn nafn]</h4>
-                <h4>* Netfang [krafa um að setja inn netfang, dæmi í reit áður en skrifað]</h4>
-                <h4>* Sími [krafa um að setja inn síma, dæmi í reit áður en skrifað]</h4>
 
-                <h2>Samþykkja og panta</h2>
-                <h4>* Ég samþykki skilmála Veitingastaðsins [box sem hægt er að haka í]</h4>
-                <h4>* Panta [panti til að senda pöntun]</h4>
+                <b4> Hvenær viltu koma? </b4>
+                  <label for="">date:
+                    <input type="date" name="" value="">
+                  </label>
+                <div class="tableDiv">
+                  <label for="fjoldi">Hve mörg?</label>
+                  <input type="number" id="fjoldi" name="fjoldi" min="0" max="10" value="1">
+                </div>
+                <div>
+                  <label for="comment">Athugasemdir:</label>    
+                  <textarea name="comment" id="comment"></textarea>
+                </div>
+
+                <p>Panta mat</p>
+                <legend>Spurningar</legend>
+                <div>
+                  <label for="color">Réttur</label>
+                  <select id="color" name="color">
+                    <option value="green">Lasagna</option>
+                    <option value="red">Sveppa risotto</option>
+                    <option value="red">Quesadilla</option>
+                    <option value="red">Kryddaðar sætkartöflur</option>
+                    <option value="red">Pizza</option>
+                  </select>
+                </div>
+
+
+
+                <p>* Heimilisfang [val um að skrifa inn heimilisfang]</p>
+
+                <p>Þínar upplýsingar</p>
+                <p>* Nafn [krafa um að setja inn nafn]</p>
+                <p>* Netfang [krafa um að setja inn netfang, dæmi í reit áður en skrifað]</p>
+                <p>* Sími [krafa um að setja inn síma, dæmi í reit áður en skrifað]</p>
+
+                <p>Samþykkja og panta</p>
+                <p>* Ég samþykki skilmála Veitingastaðsins [box sem hægt er að haka í]</p>
+                <p>* Panta [panti til að senda pöntun]</p>
                   <a href="index.html"> aftur á heimasíðu</a>
             </article>
             <aside class="vinstri">
-                <h4> vinstri dalkur </h4>
+                <p> vinstri dalkur </p>
                 <p>einhver texti her</p>
             </aside>
         </main>
@@ -70,11 +95,11 @@
                   <h1>Opnunartími</h1>
                       
                       <p4>Mánudaga til fimmtudaga <br>
-                        09:00–18:00</p4><br><br>
+                        09:00-18:00</p4><br><br>
                       <p4>Föstudaga<br>
-                        10:00–22:00</p4><br><br>
+                        10:00-22:00</p4><br><br>
                       <p4>Laugardaga<br>
-                        11:00–22:00</p4><br><br>
+                        11:00-22:00</p4><br><br>
                       <p4>Sunnudaga<br>
                         Lokað</p4><br>
       
