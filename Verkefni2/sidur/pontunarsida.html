@@ -58,20 +58,38 @@
                     <option value="red">Pizza</option>
                   </select>
                 </div>
-
-
-
-                <p>* Heimilisfang [val um að skrifa inn heimilisfang]</p>
+                <div>
+                  <label for="homeAddress">heimilisfang:</label>    
+                  <textarea name="homeAddress" id="homeAddress"></textarea>
+                </div>
 
                 <p>Þínar upplýsingar</p>
-                <p>* Nafn [krafa um að setja inn nafn]</p>
-                <p>* Netfang [krafa um að setja inn netfang, dæmi í reit áður en skrifað]</p>
-                <p>* Sími [krafa um að setja inn síma, dæmi í reit áður en skrifað]</p>
-
+                <div>
+                  <label for="yourName">nafn:</label>    
+                  <textarea name="yourName" id="yourName"></textarea>
+                </div>
+                <div>
+                  <label for="netfang">netfang:</label>    
+                  <textarea name="netfang" id="netfang" placeholder="yourname@mail.com"></textarea>
+                </div>
+                
+                <div>
+                  <label for="simi">simi:</label>    
+                  <textarea name="simi" id="simi" placeholder="000-0000"></textarea>
+                </div>
                 <p>Samþykkja og panta</p>
-                <p>* Ég samþykki skilmála Veitingastaðsins [box sem hægt er að haka í]</p>
-                <p>* Panta [panti til að senda pöntun]</p>
+                <div>
+                  <label>
+                        <input name="register" type="checkbox">
+                        Ég samþykki skilmála Veitingastaðsins
+                  </label>
+                </div>
+                <button>Panta</button>
+
+                <div>
                   <a href="index.html"> aftur á heimasíðu</a>
+                </div>
+
             </article>
             <aside class="vinstri">
                 <p> vinstri dalkur </p>
