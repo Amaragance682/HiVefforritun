@@ -1,0 +1,131 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora';
+
+  }
+  main * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+  }
+
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  header {
+    display: block;
+    width: 100%;
+    background-color: #2f0505;
+    border-bottom: 1rem solid #ffe7ae;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  body {
+    width: 100%;
+  }
+
+  main {
+    min-height: 600px;  /* vantar ad gera thetta responsive og ekki bara min height: 630 */
+    display: inline-block;
+  }
+
+
+  nav ul {
+    text-align: center;
+    background-color: #fff9ee;
+  }
+
+  nav ul li {
+    display: block;
+    display: inline-block;
+    border-bottom: 1rem solid #fff9ee;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #fff9ee;
+    font-size: 200%;
+    color: #2f0505;
+  }
+
+  a {
+    color: #2f0505;
+    font-family: 'Lora';
+  }
+
+  h1 {
+    color: #ffe7ae;
+  }
+
+  h2 {
+    color: #ffe7ae;
+  }
+
+  h3 {
+    font-family: 'Lora';
+    font-weight: 1000;
+    font-size: 1.5rem;
+  }
+  p {
+    font-family: 'Lora';
+    font-size: 20px;
+    padding-bottom: 1rem;
+    
+  }
+  
+  footer {
+    background-color: #2f0505;
+    border-top: 1rem solid;
+    border-color: #ffe7ae;
+    color: #ffe7ae;
+    padding: 1rem;
+    border-bottom: 1rem solid;
+    min-height: 300px;
+    bottom: 0;
+    
+  }
+  .footer1 {
+    position: absolute;
+    right: 0;
+    padding-right: 1rem;
+
+    
+  }
+  .footer2 {
+    position: absolute;
+    padding-left: 1rem;
+    
+  }
+  .indexText1 { 
+    width: 45%;
+    display: inline-block;
+    min-height: 200px;
+    vertical-align: top;
+    margin: 0.5rem;
+
+
+  }
+  hr {
+    
+  }

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>veitingarstadur</title>
+  <meta property="og:title" content="Veitingarstadur">
+  <meta property="og:description" content="Veitingarstadur fyrir þig">
+  <meta property="og:image" content="../myndir/sharing.jpg">
+</head>
+<body>
+    <header>
+        <h1> Forsida</h1>
+        <h2>
+          Á Veitingarstaðnum hugsum við vel um þig og gefum þér gott að borða.
+        </h2>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Forsida</a></li>
+                <li><a href="matsedilssida.html">matsedill</a></li>
+                <li><a href="pontunarsida.html">pontunir</a></li>
+                <li><a href="umVeitingarstadinn.html">um veitingarstadinn</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <article class="midja">
+                <h2> Pantanir </h2>
+                <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
+                <h2> Panta borð</h2>
+                <p> Hvenær viltu koma? </p>
+                <label for="dagsettning">dagsettning:</label>
+                <input type="date" id="dagsettning" name="dagsettning">
+                <div class="tableDiv">
+                  <label for="fjoldi">Hve mörg?</label>
+                  <input type="number" id="fjoldi" name="fjoldi" min="0" max="10" value="1">
+                </div>
+
+                <div>
+                  <label for="comment">Athugasemdir:</label>    
+                  <textarea name="comment" id="comment"></textarea>
+                </div>
+
+                
+
+                <h2>Panta mat</h2>
+                <div>
+                  <label for="color">Réttur</label>
+                  <select id="color" name="color">
+                    <option value="green">Lasagna</option>
+                    <option value="red">Sveppa risotto</option>
+                    <option value="red">Quesadilla</option>
+                    <option value="red">Kryddaðar sætkartöflur</option>
+                    <option value="red">Pizza</option>
+                  </select>
+                </div>
+                <h2>Þínar upplýsingar</h2>
+                  <label>
+                    heimilisfang:
+                    <input type="text" id="heimilisfang" required>
+                  </label>
+
+                  <label>
+                    nafn
+                    <input type="text" id="name" required>
+                  </label>
+
+                  <label>
+                    netfang:
+                    <input type="text" id="netfang" required placeholder="yourname@mail.com">
+                  </label>
+
+                  <label>
+                    simi
+                    <input type="text" id="simi" required placeholder="000-0000">
+                  </label>
+                <h2>Samþykkja og panta</h2>
+                <div>
+                  <label>
+                      <input name="register" type="checkbox">
+                      Ég samþykki skilmála Veitingastaðsins
+                  </label>
+                </div>
+                <button>Panta</button>
+
+                <div>
+                  <a href="../index.html"> aftur á heimasíðu</a>
+                </div>
+
+            </article>
+        </main>
+        <footer>
+          <h2>Hér erum við</h2>
+          <p>Veitingastaðurinn ehf.</p>
+          <p>Aðalgata 10</p>
+          <p>100 Reykjavík</p>
+          <p>Sími 333-4567</p>
+          <p>veitingastadur@example.org</p>
+
+          <h2>Opnunartími</h2>
+              <p>Mánudaga til fimmtudaga 
+                09:00-18:00</p>
+              <p>Föstudaga
+                10:00-22:00</p>
+              <p>Laugardaga
+                11:00-22:00</p>
+              <p>Sunnudaga
+                Lokað</p>
+      </footer>
+</body>
+</html>
