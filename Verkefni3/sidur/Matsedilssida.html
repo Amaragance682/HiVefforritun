@@ -8,6 +8,9 @@
   <meta property="og:title" content="Veitingarstadur">
   <meta property="og:description" content="Veitingarstadur fyrir þig">
   <meta property="og:image" content="../myndir/sharing.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -19,23 +22,23 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Forsida</a></li>
-                <li><a href="matsedilssida.html">matsedill</a></li>
+                <li>Matsedilssida</li>
                 <li><a href="pontunarsida.html">pontunir</a></li>
                 <li><a href="umVeitingarstadinn.html">um veitingarstadinn</a></li>
             </ul>
         </nav>
-        <main class="content">
-            <article class="midja">
+        <main>
                 <h3> Réttir</h3>
                     <table>
                       <thead>
                         <tr>
-                          <th width="160">Nr</th>
+                          <th width="160">Nr.</th>
                           <th width="160">heiti</th>
                           <th width="160">lysing</th>
                           <th width="160">verd</th>
                         </tr>
                       </thead>
+                      <tbody>
                       <tr>
                         <td width="160">1</td>
                         <td width="160">Lasagna</td>
@@ -90,28 +93,31 @@
                         <td width="160">Klassísk pizza</td>
                         <td width="160">2000</td>
                       </tr>
+                    </tbody>
                     </table>
-                  <a href="../index.html"> aftur á heimasíðu</a>
-            </article>
+                  <p><a href="../index.html"> aftur á heimasíðu</a></p>
         </main>
         <footer>
-          <h2>Hér erum við</h2>
-          <p>Veitingastaðurinn ehf.</p>
-          <p>Aðalgata 10</p>
-          <p>100 Reykjavík</p>
-          <p>Sími 333-4567</p>
-          <p>veitingastadur@example.org</p>
-
-          <h2>Opnunartími</h2>
-              <p>Mánudaga til fimmtudaga 
-                09:00-18:00</p>
-              <p>Föstudaga
-                10:00-22:00</p>
-              <p>Laugardaga
-                11:00-22:00</p>
-              <p>Sunnudaga
-                Lokað</p>
-      </footer>
+          <div class="footer1">
+            <h2>Hér erum við</h2>
+            <p>Veitingastaðurinn ehf.</p>
+            <p>Aðalgata 10</p>
+            <p>100 Reykjavík</p>
+            <p>Sími 333-4567</p>
+            <p>veitingastadur@example.org</p>
+          </div>
+          <div class="footer2"></div>
+            <h2>Opnunartími</h2>
+                <p>Mánudaga til fimmtudaga 
+                  09:00-18:00</p>
+                <p>Föstudaga
+                  10:00-22:00</p>
+                <p>Laugardaga
+                  11:00-22:00</p>
+                <p>Sunnudaga
+                  Lokað</p>
+            </div>
+        </footer>
 
 </body>
 </html>

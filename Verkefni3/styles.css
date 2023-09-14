@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Lora';
+    max-width: 900px;
 
   }
   main * {
-    margin-left: 2rem;
-    margin-right: 2rem;
+
 
   }
 
@@ -47,8 +47,9 @@
   }
 
   main {
-    min-height: 600px;  /* vantar ad gera thetta responsive og ekki bara min height: 630 */
+    min-height: 400px;  /* vantar ad gera thetta responsive og ekki bara min height: 630 */
     display: inline-block;
+    width: 100%;
   }
 
 
@@ -67,6 +68,7 @@
     background-color: #fff9ee;
     font-size: 200%;
     color: #2f0505;
+    font-weight: bold;
   }
 
   a {
@@ -117,7 +119,7 @@
     padding-left: 1rem;
     
   }
-  .indexText1 { 
+  .indexText1 {
     width: 45%;
     display: inline-block;
     min-height: 200px;
@@ -126,6 +128,75 @@
 
 
   }
-  hr {
+  tr {
+    text-align: center;
+    height: 4rem;
+    width: auto;
+  }
+
+  tbody tr:nth-child(2n-1) {
+    background-color: #ffe7ae;
+  }
+  table {
+    min-width: 100%;
+    padding-right: 5rem;
     
+  }
+  .fieldset1 {
+    min-width: 40%;
+    display: inline-block;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid #ffe7ae ;
+    padding: 0.5rem;
+
+  }
+  .fieldset2 {
+    min-width: 40%;
+    display: inline-block;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid #ffe7ae ;
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+  .fieldset3 {
+    min-width: 40%;
+    display: inline-block;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid #ffe7ae ;
+    padding: 0.5rem;
+
+  }
+  .fieldset4 {
+    min-width: 40%;
+    display: inline-block;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid #ffe7ae ;
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+  .bigbox {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #ffe7ae ;
+  }
+  label {
+    padding-right: 1rem;
+  }
+
+  .subdiv {
+    max-height: 500px;
+    text-align: center;
+    object-fit: cover;
+    max-width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2rem;
+  }
+  .images {
+    display: inline-block;
+
+    max-width: 900px;
   }
