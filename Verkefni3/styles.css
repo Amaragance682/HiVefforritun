@@ -50,12 +50,12 @@
   }
 
 
-  nav, ul {
+  nav ul {
     text-align: center;
     background-color: #fff9ee;
   }
 
-  nav, ul, li {
+  nav ul li {
     display: block;
     display: inline-block;
     border-bottom: 1rem solid #fff9ee;
