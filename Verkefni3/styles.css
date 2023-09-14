@@ -21,7 +21,7 @@
   
   /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
   .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
+    clip: rect(0,0,0,0);
     clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
@@ -83,7 +83,7 @@
 
   h3 {
     font-family: 'Lora';
-    font-weight: 1000;
+    font-weight: bold;
     font-size: 1.5rem;
   }
   p {
