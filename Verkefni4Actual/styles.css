@@ -1,0 +1,347 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Display';
+    max-width: 1000px;
+
+  }
+
+
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+
+  :root {
+    /* Grunn bilið okkar er 1rem == 16px */
+    --font-base-body-px: 16px;
+    --spacing: 1rem;
+  
+    /* Hámarksbreidd á efni */
+    --max-width: 900px;
+  
+    /* Border breiddir */
+    --border-small: 1px;
+    --border-large: 8px;
+    --border-radius: 6px;
+  
+    /* Litir */
+    --color-gold: #ffe7ae;
+    --color-gold-light: #fff1cf;
+    --color-dark: #2f0505;
+    --color-light: #fff9ee;
+  
+    /* Letur stillingar */
+    --font-base-size: 1rem;
+    --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Lora', Georgia, serif;
+  }
+  html,
+  input,
+  select,
+  button {
+    font-size: 16px;
+    font-family: var(--font-family-base);
+  }
+
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0,0,0,0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  header {
+    width: 100%;
+    background-color: var(--color-dark);
+    padding-bottom: 1rem;
+    justify-content: center;
+    color: var(--color-gold-light);
+
+  }
+
+  header {
+    text-align: center;
+  }
+  .Profiles {
+
+  }
+  body {
+    width: 100%;
+  }
+
+  main {
+    min-height: 400px;  /* vantar ad gera thetta responsive og ekki bara min height: 630 */
+    width: 100%;
+    justify-content: center;
+  }
+
+
+  nav ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--color-light);
+    border-bottom: 0.5rem solid var(--color-gold-light);
+    list-style: none;
+  }
+
+  nav ul li {
+    border-bottom: 1rem solid var(--color-light);
+    align-items: center;
+    background-color: var(--color-light);
+    font-size: 150%;
+    color: var(--color-dark);
+    font-weight: bold;
+    padding-right: 1rem;
+    
+  } 
+  .box a {
+    color: var(--color-dark);
+    font-weight: bold;
+    
+  }
+
+  h1 {
+    color: var(--color-gold-light);
+    font-family: var(--font-family-heading);
+  }
+
+  h2 {
+    color: var(--color-gold);
+    padding-bottom: 1rem;
+    font-family: var(--font-family-heading);
+  }
+
+  h3 {
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+  }
+
+  dt{
+    font-weight: bold;
+  }
+  .vinsaelirRettir {
+    justify-content: center;
+  }
+  h5 {
+    padding-left: 2rem;
+    font-size: 180%;
+    padding-bottom: 1rem;
+    font-family: var(--font-family-heading);
+  }
+  .imageParagraph {
+    padding-left: 3rem;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .topPart {
+    flex:1;
+  }
+  a {
+    color: black;
+  }
+
+  footer {
+    background-color: var(--color-dark);
+    border-top: 1rem solid;
+    border-color: var(--color-gold-light);
+    color: var(--color-gold-light);
+    padding: 1rem;
+    border-bottom: 1rem solid;
+    min-height: 300px;
+    bottom: 0;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer1 {
+    padding-right: 1rem;
+
+    
+  }
+  .footer2 {
+    padding-left: 1rem;
+    
+  }
+
+  .bigbox {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+  }
+
+  .taflan {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+  }
+  .indexText1 {
+    width: 45%;
+    min-height: 200px;
+    vertical-align: top;
+    background-color: var(--color-gold-light);
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  tr {
+    text-align: center;
+    height: 4rem;
+    width: auto;
+  }
+
+  tbody tr:nth-child(2n-1) {
+    background-color: var(--color-gold-light);
+  }
+  table {
+    min-width: 90%;
+  }
+
+  .finalLink {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .fieldset1 {
+    min-width: 45%;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--color-gold-light);
+
+  }
+  .fieldset2 {
+    min-width: 45%;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 0.5rem;
+    vertical-align: top;
+    background-color: var(--color-gold-light);
+  }
+  .fieldset3 {
+    min-width: 45%;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--color-gold-light);
+  }
+  .fieldset4 {
+    min-width: 45%;
+    max-width: 45%;
+    margin-bottom: 2rem;
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    padding: 0.5rem;
+    vertical-align: top;
+    background-color: var(--color-gold-light);
+  }
+  
+  label {
+
+  }
+
+  .fieldSets {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  button {
+    border-radius: 5x;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .subdiv {
+    object-fit: cover;
+    vertical-align: top;
+    width: 43%;
+    min-width: 420px;
+    background-color: var(--color-gold-light);
+    padding: 1rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .divLink {
+    padding-bottom: 1rem;
+  }
+  img {
+    max-height: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 2rem;
+    max-width: 100%;
+    border-radius: 10px;
+  
+  }
+  .input {
+    padding-bottom: 0.5rem;
+  }
+
+
+
+/*
+display flex
+flex direction row
+flex wrap wrap
+gap: color
+
+
+
+
+*/

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>veitingarstadur</title>
+  <meta property="og:title" content="Veitingarstadur">
+  <meta property="og:description" content="Veitingarstadur fyrir þig">
+  <meta property="og:image" content="../myndir/sharing.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header>
+    <h1>Pantanir</h1>
+    <p>
+      Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða
+      þú sækir.
+    </p>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="../index.html">Forsíða</a></li>
+        <li><a href="matsedilssida.html">Matseðill</a></li>
+        <li><strong>Pöntunarsíða</strong></li>
+        <li><a href="UmVeitingarstadinn.html">Um Veitingastaðinn</a></li>
+    </ul>
+</nav>
+
+  <main>
+    <form method="post" action=".">
+      <div class="fieldSets">
+      <fieldset class="fieldset1">
+        <legend><strong>Panta borð</strong></legend>
+        <p5>Hvenær viltu koma?</p5>
+        <div>
+          <label for="when"></label>
+          <input type="datetime-local" id="when" name="when">
+        </div>
+        <p5>Hve mörg?</p5>
+        <div>
+          <label for="size"></label>
+          <select id="size">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <p5>Viltu taka eitthvað fram?</p5>
+        <div>
+          <label for="special"></label>
+          <textarea id="special"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="fieldset2">
+        <legend><strong>Panta mat</strong></legend>
+        <p5>Réttur #1</p>
+        <div>
+          
+          <label for="food1"></label>
+          <input id="food1" list="foods">
+        </div>
+        <p5>Réttur #2</p5>
+        <div>   
+          <label for="food2"></label>
+          <input id="food2" list="foods">
+        </div>
+        <p5>Réttur #3</p5>
+        <div>
+          <label for="food3"></label>
+          <input id="food3" list="foods">
+        </div>
+        <p5>Réttur #4</p5>
+        <div>
+          <label for="food4"></label>
+          <input id="food4" list="foods">
+        </div>
+        <p5>Réttur #5</p5>
+        <div>
+          <label for="food5"></label>
+          <input id="food5" list="foods">
+        </div>
+        <p5>Heimilisfang</p>
+        <div>
+          <label for="address"></label>
+          <input type="text" id="address">
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset3">
+        <legend><strong>Þínar upplýsingar</strong></legend>
+        <p5>Nafn</p5>
+        <div>
+          <label for="name"></label>
+          <input id="name" type="text" required>
+        </div>
+        <p5>Netfang</p5>
+        <div>
+          <label for="email"></label>
+          <input id="email" name="email" type="email" required placeholder="nafn@example.org">
+        </div>
+        <p5>Sími</p5>
+        <div>
+          <label for="phone"></label>
+          <input id="phone" type="tel" required placeholder="345-6789">
+        </div>
+      </fieldset>
+      <fieldset class="fieldset4">
+        <legend><strong>Samþykkja og panta</strong></legend>
+        <div>
+          <label>
+            <input type="checkbox" name="terms"><p5>Ég samþykki skilmála
+            Veitingastaðsins</p5></label>
+        </div>
+        <button>Panta</button>
+      </fieldset>
+    </div>
+      <datalist id="foods">
+        <option>Lasagna</option>
+        <option>Sveppa risotto</option>
+        <option>Ferskt pasta</option>
+        <option>Quesadilla</option>
+        <option>Falafel með</option>
+        <option>Súpa dagsins</option>
+        <option>Kryddaðar sætkartöflur</option>
+        <option>Hamborgari</option>
+        <option>Pizza</option>
+      </datalist>
+    </form>
+    <div class="divLink">
+      <p><a href="../index.html" class="finalLink">Aftur á forsíðu</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer1">
+      <h2>Hér erum við</h2>
+      <p>Veitingastaðurinn ehf.</p>
+      <p>Aðalgata 10</p>
+      <p>100 Reykjavík</p>
+      <p>Sími 333-4567</p>
+      <p>veitingastadur@example.org</p>
+    </div>
+    <div class="footer2">
+      <h2>Opnunartími</h2>
+          <p>Mánudaga til fimmtudaga 
+            09:00-18:00</p>
+          <p>Föstudaga
+            10:00-22:00</p>
+          <p>Laugardaga
+            11:00-22:00</p>
+          <p>Sunnudaga
+            Lokað</p>
+      </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+}
+
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  --half-spacing: 0.5rem;
+
+  /* Hámarksbreidd á efni */
+  --max-width: 900px;
+
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
+}
+
+
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font-family-base);
+}
+/* og látum erfast á allt */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*** Almennt ***/
+
+html,
+input,
+select,
+button {
+  font-size: 16px;
+  font-family: 'Lora', serif;
+}
+
+a {
+  color: inherit;
+}
+
+dl {
+  padding-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+section {
+  margin-bottom: 1rem;
+  font-family: var(--font-family-heading);
+}
+
+
+/*** Haus ***/
+body > header {
+  padding: 1rem;
+  border-bottom: 8px solid var(--color-gold);
+
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
+
+  text-align: center;
+}
+
+/*** Valmynd ***/
+
+nav {
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  
+}
+
+/*** Meginmál ***/
+
+main {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 900px;
+}
+
+/*** Fótur ***/
+
+footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 8px solid var(--color-gold);
+
+  background-color: var(--color-dark);
+  color: var(--color-gold-light);
+  text-align: center;
+}
+
+footer > section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+/*** Box! ***/
+
+.boxes {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.boxes .box {
+  display: inline-block;
+  background-color: var(--color-gold-light);
+  margin-bottom: var(--spacing);
+  margin-right: 1%;
+  width: 48%;
+  padding: var(--half-spacing);
+  vertical-align: top;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.boxes .box p {
+  margin-top: 1rem;
+}
+.texti {
+  flex: 1;
+  padding-top: 1rem;
+}
+footer section ul {
+  margin-top: 2rem;
+}
+.boxes .box a {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: var(--font-family-heading);
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+
+}
+/*** Opnunartími ***/
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1rem;
+}
+
+/*** Matseðill ***/
+
+table {
+  margin-bottom: 1rem;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background-color: var(--color-gold);
+}
+
+/*** Pöntunarform ***/
+
+fieldset {
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-gold);
+  padding: 1rem;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset div {
+  margin-bottom: 1rem;
+}
+
+fieldset div label {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  padding: 0.5rem;
+}
+
+fieldset input[type='checkbox'] {
+  margin-right: 0.5rem;
+}
+
+form button {
+  padding: 0.25rem;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 2px 2px grey;
+}
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  padding-top: 1rem;
+  max-width: 100%;
+}
