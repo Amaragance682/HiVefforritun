@@ -1,0 +1,410 @@
+/* Reset og border-box á allt */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Leturgerðir */
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/Lora-VariableFont_wght.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans Display';
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/NotoSansDisplay-VariableFont.ttf) format('woff');
+}
+
+/* Stillingar */
+
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+  --halfSpacing: 0.5rem;
+
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter));
+
+  /* Hámarksbreidd á efni */
+  --max-width: 1400px;
+  --width-offset: calc(100% - (2 * var(--offset)));
+
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
+
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
+}
+
+/* Almennt */
+
+html,
+input,
+select,
+button {
+  font-size: var(--font-base-body-px);
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3 {
+  /* Setjum almennt bil á eftir fyrirsögnum */
+  margin-bottom: var(--spacing);
+
+  font-family: var(--font-family-heading);
+}
+
+
+
+a {
+  color: inherit;
+  background-color: inherit;
+  
+}
+
+
+.link a {
+  text-decoration: none;
+}
+
+
+.link {
+  text-align: center;
+  background-color: #2f0505;
+  border-radius: 5px;
+  color: var(--color-gold-light);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: #2f0505 solid 1px;
+}
+
+.link:hover {
+  background-color: var(--color-gold-light);
+  color: var(--color-dark); 
+}
+
+.buttonMatsedill {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.linkSmall a { 
+  background-color: #2f0505;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--color-gold-light);
+  padding: 0.5rem;
+  margin: 1rem;
+  text-decoration: none;
+  border: #2f0505 solid 1px;
+}
+
+.linkSmall a:hover {
+  background-color: var(--color-gold-light);
+    color: var(--color-dark); 
+
+}
+.popular h2 {
+  padding-left: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Hjálpar class sem felur sjónrænt en skjálesarar lesa **/
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Takki */
+
+/** Útfæra takka + kvikun **/
+
+/* Kvikun */
+
+/** Útfæra kvikun á efni þegar síða opnuð **/
+
+/* Layout */
+
+/** Útfæra layout með grid **/
+
+/* Haus */
+header {
+  background-color: #2f0505;
+  text-align: center;
+  color: #fff1cf;
+  padding-bottom: var(--spacing);
+}
+
+/** Útfæra haus með grid **/
+
+/* Valmynd */
+
+nav {
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-bottom: #ffe7ae solid var(--halfSpacing);
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  list-style: none;
+  
+}
+
+
+
+/** Meginmál **/
+
+/** Útfæra meginmál með grid **/
+.main {
+
+}
+
+
+
+/** Fótur **/
+
+/** Útfæra fót með grid **/
+footer {
+  
+  background-color: var(--color-dark);
+  padding-top: var(--spacing);
+  border-top: #ffe7ae solid var(--halfSpacing);
+  margin-top: var(--spacing);
+}
+.sock {
+  display: grid;
+  gap: var(--vertical-space);
+  justify-content: center;
+
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.footerSub1 {
+  grid-column-start: 0.5;
+  text-align: center;
+  color: #fff1cf;
+  margin-left: 40%;
+}
+
+
+.footerSub1 ul li {
+  list-style: none;
+  
+}
+
+.footerSub1 h2 {
+  color: var(--color-gold-light);
+  
+}
+
+.footerSub2 {
+  grid-column-start: 0.5;
+  text-align: center;
+  color: #fff1cf;
+  margin-right: 40%;
+}
+
+
+.footerSub2 ul li {
+  list-style: none;
+  
+}
+
+.footerSub2 h2 {
+  color: var(--color-gold-light);
+  
+}
+
+.title {
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.box .content {
+  flex: 1;
+}
+/* Box! */
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.taflan {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+}
+.folkid {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  background-color: var(--color-gold-light);
+  padding: var(--halfSpacing);
+  margin: var(--spacing);
+  color: var(--color-dark);
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  vertical-align: top;
+  max-width: 500px;
+}
+img {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  padding-top: 1rem;
+  max-width: 100%;
+
+}
+/** Útfæra box með grid **/
+
+/* Opnunartími */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: var(--spacing);
+}
+
+/* Matseðill */
+
+
+table th,
+table td {
+  padding: calc(var(--spacing) * 0.5);
+  text-align: left;
+}
+
+table tbody tr:nth-child(2n + 1) {
+  color: var(--color-dark);
+  background-color: var(--color-gold);
+
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.paragraph {
+  padding-left: 2rem;
+}
+body {
+  animation: flash 1s ease-in-out;
+  animation-fill-mode: both;
+}
+
+
+
+@media (min-width: 449px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+      
+  }
+  .sock {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    
+  }
+  .footerSub1 {
+    margin-left: 0%;;
+  }
+  .footerSub2 {
+    margin-right: 0%;
+  }
+}
+
+@media (min-width: 999px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sock {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .footerSub1 {
+    margin-left: 40%;;
+  }
+  .footerSub2 {
+    margin-right: 40%;
+  }
+}
+
+@media (min-width: 1499px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+}
