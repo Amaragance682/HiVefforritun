@@ -330,6 +330,9 @@ dd {
   margin-bottom: var(--spacing);
 }
 
+p a {
+  padding-left: 2rem;
+}
 /* Matseðill */
 
 
