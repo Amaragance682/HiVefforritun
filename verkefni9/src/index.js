@@ -1,3 +1,5 @@
+import { empty } from './lib/api.js';
+import { empty } from './lib/api.types.js';
 import { empty } from './lib/elements.js';
 import { renderDetails, renderFrontpage, searchAndRender } from './lib/ui.js';
 
@@ -35,6 +37,7 @@ function route() {
 
   const query = qs.get('query') ?? undefined;
   const id = qs.get('id');
+  const image = qs.get('image'); // Fetching the image URL
 
   const parentElement = document.body;
 
